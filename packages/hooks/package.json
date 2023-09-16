@@ -1,0 +1,32 @@
+{
+  "name": "@reuni/hooks",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "build": "microbundle -f esm,cjs"
+  },
+  "source": "src/index.ts",
+  "main": "build/index.js",
+  "module": "build/index.module.js",
+  "types": "build/index.d.ts",
+  "exports": {
+    "types": "./build/index.d.ts",
+    "require": "./build/index.js",
+    "default": "./build/index.module.js"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "@types/react": "18.2.21"
+  },
+  "files": [
+    "/build",
+    "/package.json"
+  ]
+}
