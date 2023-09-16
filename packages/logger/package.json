@@ -11,6 +11,14 @@
   "main": "build/index.js",
   "module": "build/index.module.js",
   "types": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teivienn/reuni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teivienn/reuni/issues"
+  },
+  "homepage": "https://github.com/teivienn/reuni",
   "exports": {
     "types": "./build/index.d.ts",
     "require": "./build/index.js",

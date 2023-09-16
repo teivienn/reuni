@@ -25,4 +25,4 @@ jobs:
         run: yarn lint
 
       - name: tcs
-        run: yarn tcs:check
+        run: yarn tsc:check

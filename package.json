@@ -9,6 +9,7 @@
   ],
   "readme": "README.md",
   "scripts": {
+    "prepare": "husky install",
     "release": "npx tsx ./tools/publish.ts",
     "build": "turbo run build",
     "tsc:check": "turbo run tsc:check",
@@ -18,15 +19,26 @@
     "reset": "./scripts/reset.sh"
   },
   "author": "Vitaly Statsura",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teivienn/reuni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teivienn/reuni/issues"
+  },
+  "homepage": "https://github.com/teivienn/reuni",
   "engines": {
     "node": ">=10",
     "npm": ">=8.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@react-native/eslint-config": "^0.72.2",
     "@types/prettier": "2.7.3",
     "eslint": "^8.49.0",
     "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.3",
     "microbundle": "^0.15.1",
     "prettier": "^2.4.1",
     "react": "18.2.0",
