@@ -1,8 +1,11 @@
-// import path from 'path';
-
+import { useAsyncEffect } from '@reuni/hooks';
 import React from 'react';
 import { Text } from 'react-native';
 
 export const Test = () => {
-  return <Text>hello</Text>;
+  useAsyncEffect(async () => {
+    console.log('jello');
+  }, []);
+
+  return <Text>{String('jsj')}</Text>;
 };

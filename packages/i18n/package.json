@@ -11,6 +11,7 @@
   "main": "build/index.js",
   "module": "build/index.module.js",
   "types": "build/index.d.ts",
+  "react-native": "src/index",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/teivienn/reuni.git"
@@ -38,6 +39,7 @@
     "react-native": "0.72.4"
   },
   "files": [
+    "./src",
     "/build",
     "/package.json"
   ]

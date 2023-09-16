@@ -17,7 +17,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint:changed": "eslint $(git diff --name-only --diff-filter=ACMRTUXB \"$(git merge-base HEAD origin/main)\" | grep -E \"\\.(ts|tsx|js|jsx)$\") --max-warnings=0",
-    "reset": "./scripts/reset.sh"
+    "reset": "./scripts/reset.sh",
+    "bootstrap": "yarn --cwd sandbox && yarn install"
   },
   "author": "Vitaly Statsura",
   "repository": {

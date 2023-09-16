@@ -10,6 +10,7 @@
   "source": "src/index.ts",
   "main": "build/index.js",
   "module": "build/index.module.js",
+  "react-native": "src/index",
   "types": "build/index.d.ts",
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "react-native": "0.72.4"
   },
   "files": [
+    "./src",
     "/build",
     "/package.json"
   ]

@@ -2,9 +2,6 @@ const prettierOptions = require('./.prettierrc');
 
 module.exports = {
   root: true,
-  parserOptions: {
-    requireConfigFile: false,
-  },
   extends: '@react-native',
   plugins: ['import'],
   rules: {

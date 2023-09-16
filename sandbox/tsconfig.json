@@ -1,11 +1,14 @@
 {
   "extends": "@tsconfig/react-native/tsconfig.json",
     "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./src/*"],
-      "@translations/*": ["./translations/*"]
-    }
+      "jsx": "react-native",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+        "~/*": ["./src/*"],
+        "@reuni/*": ["../packages/*/src/index"],
+      }
   },
   "include": ["src/**/*"]
 }
