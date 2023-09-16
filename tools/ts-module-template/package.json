@@ -1,0 +1,42 @@
+{
+  "name": "@reuni/ts-template",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle -f esm,cjs",
+    "tsc:check": "tsc -p tsconfig.json"
+  },
+  "source": "src/index.ts",
+  "main": "build/index.js",
+  "module": "build/index.module.js",
+  "types": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/teivienn/reuni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teivienn/reuni/issues"
+  },
+  "homepage": "https://github.com/teivienn/reuni",
+  "exports": {
+    "types": "./build/index.d.ts",
+    "require": "./build/index.js",
+    "default": "./build/index.module.js"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "@types/react": "18.2.21"
+  },
+  "files": [
+    "/build",
+    "/package.json"
+  ]
+}
