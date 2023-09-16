@@ -2,8 +2,10 @@
   "name": "@reuni/hooks",
   "version": "0.0.1",
   "private": false,
+  "license": "MIT",
   "scripts": {
-    "build": "microbundle -f esm,cjs"
+    "build": "microbundle -f esm,cjs",
+    "tsc:check": "tsc -p tsconfig.json"
   },
   "source": "src/index.ts",
   "main": "build/index.js",

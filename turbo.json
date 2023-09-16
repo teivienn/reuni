@@ -5,8 +5,8 @@
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
     },
-    "tsc": {
-      "dependsOn": ["tsc:check"],
+    "tsc:check": {
+      "dependsOn": ["^tsc:check"],
       "outputs": []
     },
     "test": {
@@ -14,9 +14,7 @@
       "outputs": [],
       "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
     },
-    "lint": {
-      "outputs": []
-    },
+    "lint": {},
     "publish": {
       "dependsOn": ["build", "test", "lint"],
       "outputs": []

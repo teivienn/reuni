@@ -11,7 +11,7 @@
   "scripts": {
     "release": "npx tsx ./tools/publish.ts",
     "build": "turbo run build",
-    "tsc:check": "turbo run tsc",
+    "tsc:check": "turbo run tsc:check",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "lint:changed": "eslint $(git diff --name-only --diff-filter=ACMRTUXB \"$(git merge-base HEAD origin/main)\" | grep -E \"\\.(ts|tsx|js|jsx)$\") --max-warnings=0",

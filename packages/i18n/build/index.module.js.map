@@ -1,0 +1,1 @@
+{"version":3,"file":"index.module.js","sources":["../src/index.ts"],"sourcesContent":["export const i18n = {};\n"],"names":["i18n"],"mappings":"AAAa,IAAAA,EAAO,CAAA"}
