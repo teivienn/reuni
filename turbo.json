@@ -5,6 +5,10 @@
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
     },
+    "tsc": {
+      "dependsOn": ["tsc:check"],
+      "outputs": []
+    },
     "test": {
       "dependsOn": ["build"],
       "outputs": [],

@@ -3,7 +3,8 @@
   "version": "0.0.5",
   "private": false,
   "scripts": {
-    "build": "microbundle -f esm,cjs"
+    "build": "microbundle -f esm,cjs",
+    "tsc:check": "tsc -p tsconfig.json"
   },
   "source": "src/index.ts",
   "main": "build/index.js",

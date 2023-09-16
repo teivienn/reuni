@@ -5,7 +5,7 @@ import { Test } from '../entities/test';
 
 export default () => {
   return (
-    <View style={{ flex: 1, backgroundColor: '#fff', paddingTop: 100 }}>
+    <View>
       <Test />
     </View>
   );
