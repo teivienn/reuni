@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": false,
   "license": "MIT",
+  "readme": "README.md",
   "scripts": {
     "build": "microbundle -f esm,cjs",
     "tsc:check": "tsc -p tsconfig.json"
@@ -26,21 +27,31 @@
     "default": "./build/index.module.js"
   },
   "peerDependencies": {
+    "i18n-js": "^4.3.2",
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "zustand": "^4.4.1"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
   },
   "devDependencies": {
-    "react": "18.2.0",
+    "@types/i18n-js": "^3.8.5",
     "@types/react": "18.2.21",
-    "react-native": "0.72.4"
+    "i18n-js": "^4.3.2",
+    "react": "18.2.0",
+    "react-native": "0.72.4",
+    "zustand": "^4.4.1"
   },
   "files": [
     "./src",
     "/build",
     "/package.json"
-  ]
+  ],
+  "dependencies": {
+    "i18n-js": "^4.3.2",
+    "react-native-localize": "^3.0.2",
+    "zustand": "^4.4.1"
+  }
 }

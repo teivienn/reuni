@@ -27,8 +27,8 @@ config.transformer = {
 config.resolver = {
   ...resolver,
   assetExts: resolver.assetExts.filter((ext) => ext !== 'svg'),
-  sourceExts: [...resolver.sourceExts, 'svg'],
-  // / 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
+  sourceExts: [...resolver.sourceExts, 'svg', 'mjs'],
+  // 3. Force Metro to resolve (sub)dependencies only from the `nodeModulesPaths`
   disableHierarchicalLookup: true,
 };
 
