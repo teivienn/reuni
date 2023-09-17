@@ -15,6 +15,7 @@ module.exports = {
     'no-irregular-whitespace': 'error',
     '@typescript-eslint/no-shadow': 'off',
     'react/jsx-boolean-value': ['error', 'never'],
+    'react/no-unstable-nested-components': ['warn', { allowAsProps: true }],
     'comma-dangle': 'off',
     'no-void': 'off',
     'import/order': [
